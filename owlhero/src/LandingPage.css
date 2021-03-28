@@ -1,38 +1,94 @@
-.App {
+*,
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #E6DECA;
+}
+
+.hero-columns {
+  width: 100%;
+  /* background: url('./pages/landing-page/img/background1.png'); */
+ 
+  background-size: cover;
+  padding: 4rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+  /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+  automatically the size of the track, based on the width of the viewport,
+   */
+
+  /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.header-card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-owl-card{
+  /* margin-top: 30%; */
+  height:505px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  /* width: 50%; */
+}
+
+/* .menu-footer{
+  margin-top: 22%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+} */
+
+.menu{
+  position: fixed;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-button{
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  margin-top: -1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#00AB90;
+  background-color: #F9C345;
+  height: 80px;
+  width: 150px;
+  font-size: 25px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-button:hoover{
+  border: none;
+  color:cornsilk;
+  background-color: #FE3538;
 }
