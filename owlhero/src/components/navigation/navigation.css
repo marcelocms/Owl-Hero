@@ -14,3 +14,15 @@
     z-index: 999;
 }
 
+.logo{
+    /* align-items: center; */
+    margin-top: 2%;
+      margin-left: 47%;
+      margin-right: 30%;
+     position:fixed;
+
+      display: block;
+    
+      height: 80px;
+      z-index: 99;
+}

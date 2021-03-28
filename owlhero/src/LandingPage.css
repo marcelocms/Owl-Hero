@@ -41,7 +41,7 @@ body {
 
 .hero-owl-card{
   /* margin-top: 30%; */
-  height:505px;
+  height:655px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -84,6 +84,9 @@ body {
   height: 80px;
   width: 150px;
   font-size: 25px;
+  font-family: 'Playfair Display',
+  serif;
+  ;
   border: none;
 }
 
@@ -91,4 +94,116 @@ body {
   border: none;
   color:cornsilk;
   background-color: #FE3538;
+}
+
+.teachers-title{
+  margin-top: -2%;
+}
+
+.our-impact-title{
+  margin-top: -0.5%;
+}
+
+@media (max-width: 1980px) {
+.hero-owl-card {
+  /* margin-top: 30%; */
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  /* width: 50%; */
+}
+}
+
+@media (max-width: 1200px) {
+  .hero-owl-card {
+    margin-top: -38%;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero-owl-card {
+    margin-top: -45%;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 930px) {
+  .hero-owl-card {
+   margin-top: -70%;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
+  }
+}
+@media (max-width: 819px) {
+  .hero-owl-card {
+    margin-top: -85%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 736px) {
+  .hero-owl-card {
+    margin-top: -90%;
+
+
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-owl-card {
+    margin-top: -90%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 716px) {
+  .hero-owl-card {
+    margin-top: -100%;
+ 
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-owl-card {
+    margin-top: -110%;
+
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-owl-card {
+    margin-top: -120%;
+   height: 250px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+  }
 }
