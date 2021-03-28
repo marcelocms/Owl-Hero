@@ -1,0 +1,28 @@
+.navbar{
+    overflow: hidden;
+    background-color: #00AB90;
+    padding: 2px 5px;
+}
+
+.header {
+    background-color: #00AB90;
+    padding: 10px;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo{
+    /* align-items: center; */
+    margin-top: 2%;
+      margin-left: 47%;
+      margin-right: 30%;
+     position:fixed;
+
+      display: block;
+    
+      height: 80px;
+      z-index: 99;
+}

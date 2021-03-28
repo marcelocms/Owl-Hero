@@ -1,38 +1,209 @@
-.App {
+*,
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #E6DECA;
+}
+
+.hero-columns {
+  width: 100%;
+  /* background: url('./pages/landing-page/img/background1.png'); */
+ 
+  background-size: cover;
+  padding: 4rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+  /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+  automatically the size of the track, based on the width of the viewport,
+   */
+
+  /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.header-card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-owl-card{
+  /* margin-top: 30%; */
+  height:655px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  /* width: 50%; */
+}
+
+/* .menu-footer{
+  margin-top: 22%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+} */
+
+.menu{
+  position: fixed;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-button{
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  margin-top: -1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#00AB90;
+  background-color: #F9C345;
+  height: 80px;
+  width: 150px;
+  font-size: 25px;
+  font-family: 'Playfair Display',
+  serif;
+  ;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header-button:hoover{
+  border: none;
+  color:cornsilk;
+  background-color: #FE3538;
+}
+
+.teachers-title{
+  margin-top: -2%;
+}
+
+.our-impact-title{
+  margin-top: -0.5%;
+}
+
+@media (max-width: 1980px) {
+.hero-owl-card {
+  /* margin-top: 30%; */
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  /* width: 50%; */
+}
+}
+
+@media (max-width: 1200px) {
+  .hero-owl-card {
+    margin-top: -38%;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1080px) {
+  .hero-owl-card {
+    margin-top: -45%;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 930px) {
+  .hero-owl-card {
+   margin-top: -70%;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
+  }
+}
+@media (max-width: 819px) {
+  .hero-owl-card {
+    margin-top: -85%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 736px) {
+  .hero-owl-card {
+    margin-top: -90%;
+
+
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-owl-card {
+    margin-top: -90%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* width: 50%; */
+  }
+}
+
+@media (max-width: 716px) {
+  .hero-owl-card {
+    margin-top: -100%;
+ 
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-owl-card {
+    margin-top: -110%;
+
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-owl-card {
+    margin-top: -120%;
+   height: 250px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
   }
 }
