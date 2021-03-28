@@ -9,6 +9,8 @@ import TeacherTitle from "./components/img/teachers.png";
 import OurImpact from "./components/img/impact.png";
 import Galaxy from "./components/img/galaxy.gif";
 import footer from "./components/img/footer.png";
+import Gallery from "./components/img/gallery.png";
+import LastFold from "./components/img/last_fold.gif";
 
 function LandingPage() {
   return (
@@ -28,6 +30,8 @@ function LandingPage() {
         <img className="teachers-title" src={TeacherTitle} />
         <img src={Galaxy} />
         <img className="our-impact-title" src={OurImpact} />
+        <img className="our-impact-title" src={Gallery} />
+        <img className="our-impact-title" src={LastFold} />
         <img className="our-impact-title" src={footer} />
 
         <div className="footer">
