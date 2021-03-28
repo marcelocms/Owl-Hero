@@ -88,9 +88,13 @@ body {
   serif;
   ;
   border: none;
+  cursor: pointer;
+    outline: none;
+
 }
 
-.header-button:hoover{
+.header-button:hover{
+  outline: none;
   border: none;
   color:cornsilk;
   background-color: #FE3538;
