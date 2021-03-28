@@ -31,7 +31,9 @@ function LandingPage() {
         <img className="our-impact-title" src={footer} />
 
         <div className="footer">
-          <button className="header-button">Install Now</button>
+          <a href="https://github.com/cosmicRover/owlhero">
+            <button className="header-button">Install Now</button>
+          </a>
           <img src={Menu} />
         </div>
       </body>
